@@ -4,5 +4,5 @@
   <p><%= pi.title %></p>
   <p><%= pi.subtitle %></p>
   <p><%= pi.body %></p>
-  <p><%= image_tag pi.thumb_image %></p>
+  <%= image_tag pi.thumb_image unless pi.thumb_image.nil? %>
 <% end %>
